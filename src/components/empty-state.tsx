@@ -5,7 +5,7 @@ type Props = {
 
 export function EmptyState({ msg }: Props) {
   return (
-    <div className='flex items-center justify-center h-full'>
+    <div className='flex items-center justify-center h-full min-h-[500px]'>
       <p className='text-3xl'>{msg}</p>
     </div>
   )

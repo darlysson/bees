@@ -1,7 +1,10 @@
 import { ArrowCircleLeft } from '@phosphor-icons/react'
 import { Link } from '@tanstack/react-router'
+import { useUser } from '@/contexts/UserContext'
 
 export function Header() {
+  const { userName } = useUser()
+
   return (
     <header className="py-4 bg-[#F2EC54] text-black">
       <nav className="max-w-[1500px] m-auto flex flex-row justify-between items-center">
@@ -10,7 +13,9 @@ export function Header() {
           <span>Logout</span>
         </Link>
 
-        <p className='font-normal text-3xl'>Hi, Fulano</p>
+        <p className='font-normal text-3xl'>
+          {`Hi, ${userName}`}
+        </p>
       </nav>
     </header>
   )
