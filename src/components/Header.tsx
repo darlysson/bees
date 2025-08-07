@@ -1,14 +1,16 @@
+import { ArrowCircleLeft } from '@phosphor-icons/react'
 import { Link } from '@tanstack/react-router'
 
-export default function Header() {
+export function Header() {
   return (
-    <header className="p-8 flex gap-2 bg-white text-black justify-between">
-      <nav className="flex flex-row">
-        <div className="px-2 font-bold">
-          <Link to="/">Logout</Link>
-        </div>
+    <header className="py-4 bg-[#F2EC54] text-black">
+      <nav className="max-w-[1500px] m-auto flex flex-row justify-between items-center">
+        <Link to="/" className="font-normal text-3xl flex items-center gap-4">
+          <ArrowCircleLeft size={48} weight="fill" />
+          <span>Logout</span>
+        </Link>
 
-        <p>Hi, Fulano</p>
+        <p className='font-normal text-3xl'>Hi, Fulano</p>
       </nav>
     </header>
   )
