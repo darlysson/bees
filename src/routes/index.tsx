@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div className="bg-[#F2EC54] h-screen flex flex-col items-center justify-center relative">
+    <div className="bg-bees-primary-yellow h-screen flex flex-col items-center justify-center relative">
       <p className='font-normal text-sm mb-4'>Please, enter your full name below</p>
       <p className='font-normal text-sm mb-4'>Only alphabetical characters are accepted</p>
 

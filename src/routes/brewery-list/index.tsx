@@ -5,7 +5,7 @@ import type { Brewery } from '@/hooks/useGetBreweries'
 import { createFileRoute } from '@tanstack/react-router'
 import { useState } from 'react'
 import { X } from '@phosphor-icons/react'
-import { Header } from '@/components/Header'
+import { Header } from '@/components/header'
 
 export const Route = createFileRoute('/brewery-list/')({
   component: BreweryList,
@@ -54,7 +54,7 @@ function BreweryList() {
   return (
     <>
       <Header />
-      <div className='max-w-[1500px] m-auto h-screen py-14 flex flex-col bg-[#FFFAF2]'>
+      <div className='max-w-[1500px] m-auto h-screen py-14 flex flex-col bg-bees-background'>
         <section className='border-b h-full'>
           <h3 className='font-semibold text-5xl'>Your favorite breweries</h3>
 

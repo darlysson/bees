@@ -18,7 +18,7 @@ export function Card({ brewery, isFavorite = false, onToggleFavorite }: Props) {
   return (
     <div className="bg-white rounded-sm border py-6 px-4 relative min-h-[220px]">
       <div className="flex justify-between mb-6">
-        <h3 className='font-bold text-xl truncate'>{name}</h3>
+        <h3 className='font-bold text-xl truncate text-bees-gray-800'>{name}</h3>
 
         <button
           className='cursor-pointer ml-5'
@@ -32,8 +32,8 @@ export function Card({ brewery, isFavorite = false, onToggleFavorite }: Props) {
         </button>
       </div>
       <div className='mb-6'>
-        <p className='font-normal text-base text-[#3F3F46]'>{address ?? ""}</p>
-        <p className='font-normal text-base text-[#3F3F46]'>{`${city} - ${state} - ${country}`}</p>
+        <p className='font-normal text-base text-bees-gray-700'>{address ?? ""}</p>
+        <p className='font-normal text-base text-bees-gray-700'>{`${city} - ${state} - ${country}`}</p>
       </div>
       <div className='flex gap-3 flex-wrap absolute bottom-6'>
         <Tag icon="chart" data={brewery_type} />

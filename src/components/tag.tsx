@@ -7,7 +7,7 @@ export type Props = {
 
 export function Tag({ icon, data }: Props) {
   return (
-    <div className="rounded-full flex items-center gap-1 bg-[#F2EC54] px-3 py-2">
+    <div className="rounded-full flex items-center gap-1 bg-bees-primary-yellow px-3 py-2">
       {icon === "phone" && <Phone size={16} weight="light" />}
       {icon === "chart" && <ChartBar size={16} weight="light" />}
       {icon === "map" && <MapPin size={16} weight="light" />}

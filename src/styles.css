@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bees-primary-yellow: #F2EC54;
+  --color-bees-background: #FFFAF2;
+  --color-bees-gray-700: #3F3F46;
+  --color-bees-gray-800: #27272A;
+}
+
 body {
   @apply m-0;
   font-family: "Work Sans", sans-serif;
